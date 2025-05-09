@@ -1,4 +1,3 @@
-from colorama import Fore, Back, Style, init
 import subprocess, sys, os
 os.system("pkg install figlet")
 os.system("clear")
@@ -856,8 +855,8 @@ def send(number, amount, worker_amount):
     restart()
 
 def watermark():
-    print(Fore.RED + "SMS Tool by B3RK1N")
-    print(Fore.RED +"""⠀⠀⠀⠠⣤⣀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢀⣤⣤⠤⠀⠀⠀⠀⠀
+    print("SMS Tool by  B3RK1N")
+    print("""⠀⠀⠀⠠⣤⣀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢀⣤⣤⠤⠀⠀⠀⠀⠀
 ⠀⠀⠀⠀⢈⣿⡇⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⣿⣿⣅⠀⠀⠀⠀⠀⠀
 ⠀⠀⢠⣴⣿⡿⠃⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠙⠿⣿⣷⣦⡀⠀⠀⠀
 ⢀⣴⣿⡷⠋⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠈⠻⣿⣿⣦⡀⠀
@@ -875,7 +874,7 @@ def watermark():
 ⠀⠀⣧⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣯⠟⣡⣫⣢⢏⣼⡵⠋⠀⠀⠀⠀⠀
 ⠀⢸⣿⣏⢿⣿⣿⣿⣿⣿⣿⣿⡿⢿⣿⡾⢕⣻⣽⣵⠿⠛⠁⠀⠀⠀⠀⠀⠀⠀
 ⠀⠘⢷⣮⣿⡼⢭⡟⠳⠞⡖⢛⣶⣷⣯⡶⠟⠛⠁⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
-⠀⠀⠀⠉⠛⠛⠛⠿⠟⠛⠛⠋""")
+⠀⠀⠀⠉⠛⠛⠛⠿⠟⠛⠛⠋""")   
 
 def get_number():
     global clear
@@ -948,4 +947,3 @@ failed_sends = 0
 clear = lambda: os.system("cls")
 
 start()
-
